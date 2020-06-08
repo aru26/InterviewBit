@@ -1,0 +1,13 @@
+public class Solution {
+public String solve(String A) {
+
+    String arr[] =A.trim().split(" ");
+
+    String S="";
+    for(int i=0;i<arr.length;i++)
+         if(!arr[i].equals(" "))
+        S+=arr[arr.length-1-i]+" ";
+     return S.substring(0,S.length()-1);
+    
+}
+}
